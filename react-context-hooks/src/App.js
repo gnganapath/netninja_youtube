@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
-
+import Navbar from './components/Navbar';
+import BookList from './components/BookList'
 function App() {
   return (
     <div className="App">
-      plain - react context- hooks (functional) component app
-	  
+     <h1>React Context & Hooks - tutorail</h1>
+      <Navbar />
+      <BookList />
     </div>
   );
 }
