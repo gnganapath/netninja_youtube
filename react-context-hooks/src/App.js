@@ -2,15 +2,19 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import BookList from './components/BookList';
 import ThemeContextProvider from './contexts/ThemeContext';
-
+//export const ChannelContext = React.createContext()
 function App() {
+ 
   return (
     <div className="App">
-      <ThemeContextProvider>
+      
+      <ThemeContextProvider >
+        {/* <ChannelContext.Provider value={'Codevolution'}> */}
           <h1>React Context & Hooks - tutorail</h1>
           <Navbar />
           <BookList />
-      </ThemeContextProvider>
+        {/* </ChannelContext.Provider> */}
+       </ThemeContextProvider>
     </div>
   );
 }
